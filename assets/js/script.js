@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (window.location.protocol.startsWith('http')) {
     await loadIncludes();
   }
+  initMobileMenu();
   highlightActiveNavLink();
   initNavbarScroll();
   initBackToTop();
@@ -73,6 +74,7 @@ async function loadIncludes() {
   }
 
   await Promise.allSettled(tasks);
+  initMobileMenu();
   initWhatsAppButtons();
 }
 
@@ -735,3 +737,104 @@ function escapeHtml(str) {
     }[tag] || tag)
   );
 }
+
+/* ---------------- Mobile Slide-From-Right Drawer & Dropdown ---------------- */
+function initMobileMenu() {
+  // Prevent multiple bindings of global listener
+  if (document.body.dataset.mobileMenuInitialized === 'true') return;
+  document.body.dataset.mobileMenuInitialized = 'true';
+
+  // Create backdrop if not existing
+  let backdrop = document.querySelector('.navbar-backdrop');
+  if (!backdrop) {
+    backdrop = document.createElement('div');
+    backdrop.className = 'navbar-backdrop';
+    document.body.appendChild(backdrop);
+  }
+
+  function openMenu() {
+    const navCollapse = document.getElementById('mainNavbar');
+    if (navCollapse) navCollapse.classList.add('show');
+    backdrop.classList.add('show');
+    document.body.classList.add('mobile-nav-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    const navCollapse = document.getElementById('mainNavbar');
+    if (navCollapse) navCollapse.classList.remove('show');
+    backdrop.classList.remove('show');
+    document.body.classList.remove('mobile-nav-open');
+    document.body.style.overflow = '';
+  }
+
+  // Delegated click handler on document
+  document.addEventListener('click', (e) => {
+    // 1. Navbar Toggler Button
+    const toggler = e.target.closest('.navbar-toggler');
+    if (toggler) {
+      e.preventDefault();
+      e.stopPropagation();
+      const navCollapse = document.getElementById('mainNavbar');
+      if (navCollapse && navCollapse.classList.contains('show')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+      return;
+    }
+
+    // 2. Mobile Nav Close Button
+    const closeBtn = e.target.closest('#mobileNavCloseBtn, .mobile-nav-close');
+    if (closeBtn) {
+      e.preventDefault();
+      closeMenu();
+      return;
+    }
+
+    // 3. Backdrop Click
+    if (e.target.classList.contains('navbar-backdrop')) {
+      closeMenu();
+      return;
+    }
+
+    // 4. Dropdown Toggle (Visa Types) on Mobile
+    const dropdownToggle = e.target.closest('.dropdown-mega-wrapper .dropdown-toggle');
+    if (dropdownToggle && window.innerWidth < 992) {
+      e.preventDefault();
+      e.stopPropagation();
+      const wrapper = dropdownToggle.closest('.dropdown-mega-wrapper');
+      const menu = wrapper ? wrapper.querySelector('.dropdown-menu-mega') : null;
+      if (menu) {
+        const isOpen = menu.classList.contains('show');
+        if (isOpen) {
+          menu.classList.remove('show');
+          dropdownToggle.classList.remove('show');
+          if (wrapper) wrapper.classList.remove('show');
+        } else {
+          menu.classList.add('show');
+          dropdownToggle.classList.add('show');
+          if (wrapper) wrapper.classList.add('show');
+        }
+      }
+      return;
+    }
+
+    // 5. Regular internal links in mobile drawer
+    const navLink = e.target.closest('#mainNavbar a:not(.dropdown-toggle)');
+    if (navLink && window.innerWidth < 992) {
+      closeMenu();
+    }
+  });
+
+  // Close when pressing Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const navCollapse = document.getElementById('mainNavbar');
+      if (navCollapse && navCollapse.classList.contains('show')) {
+        closeMenu();
+      }
+    }
+  });
+}
+
