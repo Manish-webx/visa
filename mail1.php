@@ -19,7 +19,7 @@ $message = isset($_POST['message']) && trim($_POST['message']) !== '' ? htmlspec
 
 $body = "";
 $body .= '<div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.6; color: #333;">';
-$body .= '<h3 style="color: #0b1f3a; border-bottom: 2px solid #c89d53; padding-bottom: 8px;">New Lead — Dubai Visa Assistance</h3>';
+$body .= '<h3 style="color: #0b1f3a; border-bottom: 2px solid #c89d53; padding-bottom: 8px;">New Lead  Dubai Visa Assistance</h3>';
 $body .= '<table style="width: 100%; max-width: 600px; border-collapse: collapse; margin-top: 15px;">';
 $body .= '<tr><td style="padding: 8px; background: #f8f9fa; font-weight: bold; width: 35%;">Applicant / Lead Name:</td><td style="padding: 8px; border-bottom: 1px solid #eee;">' . $name . '</td></tr>';
 $body .= '<tr><td style="padding: 8px; background: #f8f9fa; font-weight: bold;">Phone / WhatsApp:</td><td style="padding: 8px; border-bottom: 1px solid #eee;">' . $phone . '</td></tr>';
