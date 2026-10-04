@@ -171,28 +171,28 @@ function initVisaFinder() {
         name: 'Dubai 14 Days Express / Tourist Visa',
         entry: 'Single or Multiple Entry',
         validity: '14 Days stay period',
-        targetUrl: 'dubai-14-days.html',
+        targetUrl: 'dubai-14-days-visa.html',
         desc: 'Quick visa tailored for short vacations, meetings, and urgent business trips.'
       },
       '30-days': {
         name: 'Dubai 30 Days Tourist Visa',
         entry: 'Single Entry',
         validity: '30 Days from entry',
-        targetUrl: 'dubai-30-days.html',
+        targetUrl: 'dubai-30-days-visa.html',
         desc: 'Ideal for leisure holidays, family visits, and short business trips.'
       },
       '60-days': {
         name: 'Dubai 60 Days Tourist Visa',
         entry: 'Single Entry',
         validity: '60 Days from entry',
-        targetUrl: 'dubai-60-days.html',
+        targetUrl: 'dubai-60-days-visa.html',
         desc: 'Recommended for extended vacations, job exploration, and longer family stays.'
       },
       'multiple-entry': {
         name: 'Dubai Multiple Entry Visa (30/60 Days)',
         entry: 'Multiple Entries',
         validity: 'Valid across stay period',
-        targetUrl: 'dubai-multiple-entry.html',
+        targetUrl: 'dubai-multiple-entry-visa.html',
         desc: 'Best for cruise passengers, business travelers, and multi-country trips.'
       },
       'transit': {

@@ -48,14 +48,14 @@ dubai-visa-website/
 ├── privacy-policy.html                 # Privacy Policy & Document Protection Terms
 ├── terms-and-conditions.html           # Terms of Service & Non-Government Disclaimer
 │
-├── dubai-14-days.html                  # Dubai 14 Days Single & Multiple Entry Express Visa
-├── dubai-30-days.html                  # Dubai 30 Days Single Entry Tourist Visa
-├── dubai-60-days.html                  # Dubai 60 Days Single Entry Tourist Visa
-├── dubai-multiple-entry.html           # Dubai 14/30/60 Days Multiple Entry Visa
+├── dubai-14-days-visa.html                  # Dubai 14 Days Single & Multiple Entry Express Visa
+├── dubai-30-days-visa.html                  # Dubai 30 Days Single Entry Tourist Visa
+├── dubai-60-days-visa.html                  # Dubai 60 Days Single Entry Tourist Visa
+├── dubai-multiple-entry-visa.html           # Dubai 14/30/60 Days Multiple Entry Visa
 ├── dubai-transit-visa.html             # Dubai 48 & 96 Hours Airport Transit Visas
 ├── uae-5-year-visa.html                # UAE 5-Year Multiple Entry Tourist Visa
 ├── gcc-resident-visa.html              # GCC Resident UAE Entry Permit
-├── visa-extension.html                 # In-Country Dubai Visa Extension Assistance
+├── dubai-visa-extension.html                 # In-Country Dubai Visa Extension Assistance
 │
 ├── blog.html                           # Blog Articles Listing
 ├── dubai-visa-for-indians.html         # Guide for Indian Travelers
