@@ -6,10 +6,9 @@
 
 // Global Configuration (Easily configurable by the website owner)
 const CONFIG = {
-  WHATSAPP_NUMBER: "971500000000", // Replace with actual business WhatsApp number with country code (no + sign)
+  WHATSAPP_NUMBER: "919565416467",
   COMPANY_NAME: "Dubai Express Visas",
-  SUPPORT_EMAIL: "support@dubaiexpressvisas.com",
-  SUPPORT_PHONE: "+971 4 000 0000",
+  SUPPORT_PHONE: "+91 95654 16467",
   DOMAIN: "https://www.dubaiexpressvisas.com"
 };
 
@@ -239,7 +238,7 @@ function initVisaFinder() {
             </div>
             <div class="d-flex gap-2">
               <a href="${selected.targetUrl}" class="btn btn-outline-navy btn-sm px-3">View Details</a>
-              <a href="apply.html?visa=${visaType}&urgency=${urgency}" class="btn btn-gold btn-sm px-4">Apply Now <i class="bi bi-arrow-right-short"></i></a>
+              <a href="contact.html" class="btn btn-gold btn-sm px-4">Inquire Now <i class="bi bi-arrow-right-short"></i></a>
             </div>
           </div>
         </div>

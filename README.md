@@ -40,8 +40,7 @@ dubai-visa-website/
 │
 ├── index.html                          # Homepage (Express Fast-Track, Interactive Pricing Matrix, Live Tracker, Country Search)
 ├── about.html                          # About Us & Company Philosophy
-├── contact.html                        # Contact Channels, Office Details & Support Desk
-├── apply.html                          # 3-Step Application Wizard & WhatsApp Generator (Regular & Express)
+├── contact.html                        # Contact Channels, Online Inquiry & Support Desk
 ├── track.html                          # Live Visa Application Status Tracker (Ref & Passport lookup)
 ├── visa-requirements.html              # Comprehensive Document Checklist & Photo Specifications
 ├── faq.html                            # Categorized FAQ with Live Search & Structured Schema
@@ -84,20 +83,17 @@ All primary business settings are centralized at the top of [`assets/js/script.j
 
 ```javascript
 const CONFIG = {
-  WHATSAPP_NUMBER: "971500000000", // Replace with your country-code WhatsApp number (no + or spaces)
+  WHATSAPP_NUMBER: "919565416467", // WhatsApp number with country code (no + or spaces)
   COMPANY_NAME: "Dubai Express Visas",
-  SUPPORT_EMAIL: "support@dubaiexpressvisas.com",
-  SUPPORT_PHONE: "+971 4 000 0000",
+  SUPPORT_PHONE: "+91 95654 16467",
   DOMAIN: "https://www.dubaiexpressvisas.com"
 };
 ```
 
 ### To customize business details across HTML files:
 Search and replace the placeholders:
-- `YOUR_PHONE` → e.g., `+971 4 123 4567`
-- `YOUR_WHATSAPP_NUMBER` → e.g., `+971 50 123 4567`
-- `YOUR_EMAIL` → e.g., `info@yourdomain.com`
-- `YOUR_ADDRESS` → e.g., `Office 1204, Aspect Tower, Business Bay, Dubai, UAE`
+- `YOUR_PHONE` → `+91 95654 16467`
+- `YOUR_WHATSAPP_NUMBER` → `+91 95654 16467`
 - `COMPANY_NAME` → Your brand name
 
 ---
@@ -118,5 +114,5 @@ Search and replace the placeholders:
 ## 🔒 Future Backend / Form Service Integration
 
 When ready to connect backend services (e.g., Formspree, Web3Forms, PHP mailer, or Node.js / Laravel API):
-1. In [`apply.html`](apply.html) or [`contact.html`](contact.html), add your `action="https://your-api.com/submit"` and `method="POST"` to `<form>`.
+1. In [`contact.html`](contact.html), verify `action="mail1.php"` and `method="POST"` on `<form>`.
 2. Secure file uploads must be streamed to cloud storage (e.g. AWS S3 / Cloudinary) with SSL encryption.
