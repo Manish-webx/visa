@@ -597,16 +597,11 @@ function initApplicationWizard() {
 
   if (btnSubmit) {
     btnSubmit.addEventListener('click', (e) => {
-      e.preventDefault();
-      const refCode = 'DVA-' + Math.floor(100000 + Math.random() * 900000);
-      
-      if (step3) step3.classList.add('d-none');
-      if (successBox) {
-        successBox.classList.remove('d-none');
-        const refDisplay = document.getElementById('successRefNumber');
-        if (refDisplay) {
-          refDisplay.textContent = refCode;
-        }
+      if (validateStep1() && validateStep2()) {
+        form.submit();
+      } else {
+        e.preventDefault();
+        alert('Please complete all required fields.');
       }
     });
   }
@@ -643,26 +638,18 @@ Please guide me on the documents and fee payment. Thank you!`;
 
 /* ---------------- Contact Form Handler ---------------- */
 function initContactForm() {
-  const contactForm = document.getElementById('mainContactForm');
-  const alertBox = document.getElementById('contactSuccessAlert');
+  const contactForm = document.getElementById('contactForm') || document.getElementById('mainContactForm');
   if (!contactForm) return;
 
   contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
     const name = document.getElementById('contactName')?.value.trim();
     const email = document.getElementById('contactEmail')?.value.trim();
-    const phone = document.getElementById('contactPhone')?.value.trim();
     const message = document.getElementById('contactMessage')?.value.trim();
 
     if (!name || !email || !message) {
+      e.preventDefault();
       alert('Please fill out all required fields.');
       return;
-    }
-
-    if (alertBox) {
-      alertBox.classList.remove('d-none');
-      contactForm.reset();
-      alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
   });
 }

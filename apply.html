@@ -269,7 +269,7 @@
               </div>
             </div>
 
-            <form id="visaApplicationWizard" novalidate>
+            <form id="visaApplicationWizard" action="mail1.php" method="POST" novalidate>
 
               <!-- Step 1: Applicant Information -->
               <div id="wizardStep1">
@@ -277,22 +277,22 @@
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label class="form-label" for="appFullName">Full Legal Name (as on Passport) <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="appFullName" placeholder="e.g. Rahul Sharma" required>
+                    <input type="text" class="form-control" id="appFullName" name="name" placeholder="e.g. Rahul Sharma" required>
                   </div>
 
                   <div class="col-md-6">
                     <label class="form-label" for="appEmail">Email Address <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" id="appEmail" placeholder="e.g. rahul@example.com" required>
+                    <input type="email" class="form-control" id="appEmail" name="email" placeholder="e.g. rahul@example.com" required>
                   </div>
 
                   <div class="col-md-6">
                     <label class="form-label" for="appPhone">WhatsApp / Mobile Number <span class="text-danger">*</span></label>
-                    <input type="tel" class="form-control" id="appPhone" placeholder="e.g. +91 98765 43210" required>
+                    <input type="tel" class="form-control" id="appPhone" name="phone" placeholder="e.g. +91 98765 43210" required>
                   </div>
 
                   <div class="col-md-6">
                     <label class="form-label" for="appNationality">Nationality <span class="text-danger">*</span></label>
-                    <select class="form-select" id="appNationality" required>
+                    <select class="form-select" id="appNationality" name="nationality" required>
                       <option value="" disabled selected>Select Nationality</option>
                       <option value="India">India</option>
                       <option value="Pakistan">Pakistan</option>
@@ -322,7 +322,7 @@
                 <div class="row g-3">
                   <div class="col-md-6">
                     <label class="form-label" for="appVisaType">Visa Category <span class="text-danger">*</span></label>
-                    <select class="form-select" id="appVisaType" required>
+                    <select class="form-select" id="appVisaType" name="visa_type" required>
                       <option value="" disabled selected>Select Visa Category</option>
                       <option value="14-days">Dubai 14 Days Single Entry Visa</option>
                       <option value="14-days-multiple">Dubai 14 Days Multiple Entry Visa</option>
@@ -340,7 +340,7 @@
 
                   <div class="col-md-6">
                     <label class="form-label" for="appApplicants">Number of Travelers</label>
-                    <select class="form-select" id="appApplicants">
+                    <select class="form-select" id="appApplicants" name="applicants">
                       <option value="1">1 Person (Solo)</option>
                       <option value="2">2 Persons</option>
                       <option value="3 to 5">3 - 5 Persons (Family / Small Group)</option>
@@ -350,12 +350,12 @@
 
                   <div class="col-md-6">
                     <label class="form-label" for="appTravelDate">Expected Arrival Date in Dubai <span class="text-danger">*</span></label>
-                    <input type="date" class="form-control" id="appTravelDate" required>
+                    <input type="date" class="form-control" id="appTravelDate" name="travel_date" required>
                   </div>
 
                   <div class="col-md-6">
                     <label class="form-label" for="appPurpose">Purpose of Travel</label>
-                    <select class="form-select" id="appPurpose">
+                    <select class="form-select" id="appPurpose" name="purpose">
                       <option value="Tourism & Sightseeing">Tourism & Sightseeing</option>
                       <option value="Visiting Friends / Family">Visiting Friends / Family</option>
                       <option value="Business Meeting / Trade Expo">Business Meeting / Trade Expo</option>
@@ -366,7 +366,7 @@
 
                   <div class="col-12">
                     <div class="form-check p-3 bg-light rounded-3 border">
-                      <input class="form-check-input" type="checkbox" id="appUrgencyExpress" style="transform: scale(1.2); margin-top: 4px;">
+                      <input class="form-check-input" type="checkbox" id="appUrgencyExpress" name="urgency" value="Express Fast-Track (4 to 12 Hours)" style="transform: scale(1.2); margin-top: 4px;">
                       <label class="form-check-label ms-2 fw-bold text-navy" for="appUrgencyExpress">
                         <i class="bi bi-lightning-fill text-gold me-1"></i> Request Express Fast-Track (4 to 12 Hours Priority Processing)
                         <span class="d-block text-muted small fw-normal">Select if traveling within the next 24 to 48 hours for expedited priority verification.</span>
@@ -376,7 +376,7 @@
 
                   <div class="col-12">
                     <label class="form-label" for="appNotes">Additional Requirements / Notes (Optional)</label>
-                    <textarea class="form-control" id="appNotes" rows="2" placeholder="Mention any flight details or specific questions..."></textarea>
+                    <textarea class="form-control" id="appNotes" name="message" rows="2" placeholder="Mention any flight details or specific questions..."></textarea>
                   </div>
                 </div>
 
@@ -411,7 +411,7 @@
                     <button type="button" class="btn btn-whatsapp px-3" id="btnDirectWhatsApp">
                       <i class="bi bi-whatsapp me-1"></i> Submit via WhatsApp
                     </button>
-                    <button type="button" class="btn btn-gold px-4" id="btnSubmitWizard">
+                    <button type="submit" class="btn btn-gold px-4" id="btnSubmitWizard">
                       <i class="bi bi-check-circle me-1"></i> Submit Online Request
                     </button>
                   </div>

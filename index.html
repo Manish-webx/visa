@@ -322,11 +322,11 @@
         </div>
       </div>
 
-      <form id="visaFinderForm">
+      <form id="visaFinderForm" action="mail1.php" method="POST">
         <div class="row g-3">
           <div class="col-lg-3 col-md-6">
             <label class="form-label" for="finderNationality">Your Nationality</label>
-            <select class="form-select" id="finderNationality" required>
+            <select class="form-select" id="finderNationality" name="nationality" required>
               <option value="India" selected>India (Passport Holder)</option>
               <option value="Pakistan">Pakistan</option>
               <option value="Philippines">Philippines</option>
@@ -343,7 +343,7 @@
 
           <div class="col-lg-3 col-md-6">
             <label class="form-label" for="finderType">Visa Duration / Type</label>
-            <select class="form-select" id="finderType">
+            <select class="form-select" id="finderType" name="visa_type">
               <option value="14-days">14 Days (Short Holiday / Urgent Expo)</option>
               <option value="30-days" selected>30 Days (Standard Tourist)</option>
               <option value="60-days">60 Days (Extended Vacation)</option>
@@ -356,7 +356,7 @@
 
           <div class="col-lg-3 col-md-6">
             <label class="form-label" for="finderUrgency">Processing Speed</label>
-            <select class="form-select" id="finderUrgency">
+            <select class="form-select" id="finderUrgency" name="urgency">
               <option value="regular" selected>Regular (24–72 Hours)</option>
               <option value="express">Express Fast-Track (4–12 Hours)</option>
             </select>
@@ -714,10 +714,10 @@
         <div class="col-lg-5">
           <div class="bg-white rounded-4 p-4 text-dark shadow-lg">
             <h5 class="fw-bold text-navy mb-3"><i class="bi bi-search text-gold me-2"></i>Quick Status Search</h5>
-            <form id="heroQuickTrackForm" onsubmit="event.preventDefault(); window.location.href='track.html';">
+            <form id="heroQuickTrackForm" action="mail1.php" method="POST" onsubmit="event.preventDefault(); window.location.href='track.html';">
               <div class="mb-3">
                 <label class="form-label small text-muted">Reference or Passport Number</label>
-                <input type="text" class="form-control" placeholder="e.g. DVA-102938" required>
+                <input type="text" class="form-control" name="reference_number" placeholder="e.g. DVA-102938" required>
               </div>
               <button type="submit" class="btn btn-navy w-100">Check Live Status <i class="bi bi-arrow-right-short"></i></button>
             </form>

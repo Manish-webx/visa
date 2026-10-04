@@ -241,23 +241,23 @@
             
             <div id="contactAlert" class="alert d-none"></div>
 
-            <form id="contactForm" novalidate>
+            <form id="contactForm" action="mail1.php" method="POST" novalidate>
               <div class="row g-3">
                 <div class="col-md-6">
                   <label class="form-label" for="contactName">Your Name <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="contactName" placeholder="e.g. Amit Patel" required>
+                  <input type="text" class="form-control" id="contactName" name="name" placeholder="e.g. Amit Patel" required>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label" for="contactEmail">Email Address <span class="text-danger">*</span></label>
-                  <input type="email" class="form-control" id="contactEmail" placeholder="e.g. amit@example.com" required>
+                  <input type="email" class="form-control" id="contactEmail" name="email" placeholder="e.g. amit@example.com" required>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label" for="contactPhone">Phone / WhatsApp Number</label>
-                  <input type="tel" class="form-control" id="contactPhone" placeholder="e.g. +91 98765 00000">
+                  <input type="tel" class="form-control" id="contactPhone" name="phone" placeholder="e.g. +91 98765 00000">
                 </div>
                 <div class="col-md-6">
                   <label class="form-label" for="contactSubject">Subject / Inquiry Type</label>
-                  <select class="form-select" id="contactSubject">
+                  <select class="form-select" id="contactSubject" name="subject">
                     <option value="General Inquiry">General Visa Inquiry</option>
                     <option value="Status Check">Check Application Status</option>
                     <option value="Document Query">Document Requirement Query</option>
@@ -267,7 +267,7 @@
                 </div>
                 <div class="col-12">
                   <label class="form-label" for="contactMessage">Your Message <span class="text-danger">*</span></label>
-                  <textarea class="form-control" id="contactMessage" rows="4" placeholder="Please describe how we can assist you..." required></textarea>
+                  <textarea class="form-control" id="contactMessage" name="message" rows="4" placeholder="Please describe how we can assist you..." required></textarea>
                 </div>
               </div>
 
