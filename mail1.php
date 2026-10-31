@@ -75,12 +75,12 @@ try {
     $mail->IsHTML(true);
 
     $mail->send();
-    header("Location: thank-you.html");
+    header("Location: thank-you");
     exit();
 } catch (Exception $e) {
     echo "<script>
         alert('Mail Error: {$mail->ErrorInfo}');
-        window.location.href = 'index.html';
+        window.location.href = './';
     </script>";
 }
 

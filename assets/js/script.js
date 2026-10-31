@@ -79,9 +79,9 @@ async function loadIncludes() {
 
 function highlightActiveNavLink() {
   let path = window.location.pathname;
-  let currentPage = path.substring(path.lastIndexOf('/') + 1);
-  if (!currentPage || currentPage === '' || currentPage === '/') {
-    currentPage = 'index.html';
+  let currentPage = path.substring(path.lastIndexOf('/') + 1).replace(/\.html$/, '');
+  if (!currentPage || currentPage === 'index') {
+    currentPage = './';
   }
 
   const allLinks = document.querySelectorAll('.navbar-nav .nav-link, .dropdown-menu .dropdown-item, .dropdown-menu .dropdown-item-rich');
@@ -170,49 +170,49 @@ function initVisaFinder() {
         name: 'Dubai 14 Days Express / Tourist Visa',
         entry: 'Single or Multiple Entry',
         validity: '14 Days stay period',
-        targetUrl: 'dubai-14-days-visa.html',
+        targetUrl: 'dubai-14-days-visa',
         desc: 'Quick visa tailored for short vacations, meetings, and urgent business trips.'
       },
       '30-days': {
         name: 'Dubai 30 Days Tourist Visa',
         entry: 'Single Entry',
         validity: '30 Days from entry',
-        targetUrl: 'dubai-30-days-visa.html',
+        targetUrl: 'dubai-30-days-visa',
         desc: 'Ideal for leisure holidays, family visits, and short business trips.'
       },
       '60-days': {
         name: 'Dubai 60 Days Tourist Visa',
         entry: 'Single Entry',
         validity: '60 Days from entry',
-        targetUrl: 'dubai-60-days-visa.html',
+        targetUrl: 'dubai-60-days-visa',
         desc: 'Recommended for extended vacations, job exploration, and longer family stays.'
       },
       'multiple-entry': {
         name: 'Dubai Multiple Entry Visa (30/60 Days)',
         entry: 'Multiple Entries',
         validity: 'Valid across stay period',
-        targetUrl: 'dubai-multiple-entry-visa.html',
+        targetUrl: 'dubai-multiple-entry-visa',
         desc: 'Best for cruise passengers, business travelers, and multi-country trips.'
       },
       'transit': {
         name: 'Dubai 48 / 96 Hours Transit Visa',
         entry: 'Single Entry',
         validity: '48 or 96 Hours stopover',
-        targetUrl: 'dubai-transit-visa.html',
+        targetUrl: 'dubai-transit-visa',
         desc: 'Crafted for airport stopovers and connecting flights with confirmed onward tickets.'
       },
       'gcc-resident': {
         name: 'GCC Resident UAE Entry Permit',
         entry: 'Single Entry',
         validity: '30 Days stay',
-        targetUrl: 'gcc-resident-visa.html',
+        targetUrl: 'gcc-resident-visa',
         desc: 'Special category for residents of Saudi Arabia, Oman, Qatar, Kuwait, and Bahrain.'
       },
       '5-year': {
         name: 'UAE 5-Year Multiple Entry Visa',
         entry: 'Multiple Entries (90 Days per visit)',
         validity: '5 Years validity window',
-        targetUrl: 'uae-5-year-visa.html',
+        targetUrl: 'uae-5-year-visa',
         desc: 'Self-sponsored long-term tourist visa for frequent UAE travelers.'
       }
     };
@@ -238,7 +238,7 @@ function initVisaFinder() {
             </div>
             <div class="d-flex gap-2">
               <a href="${selected.targetUrl}" class="btn btn-outline-navy btn-sm px-3">View Details</a>
-              <a href="contact.html" class="btn btn-gold btn-sm px-4">Inquire Now <i class="bi bi-arrow-right-short"></i></a>
+              <a href="contact" class="btn btn-gold btn-sm px-4">Inquire Now <i class="bi bi-arrow-right-short"></i></a>
             </div>
           </div>
         </div>
