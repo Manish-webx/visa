@@ -1,4 +1,38 @@
+# Robots & AI Search Crawler Directives for Dubai Express Visas
 User-agent: *
+Allow: /
+Disallow: /include/
+Disallow: /PHPMailer/
+Disallow: /mail1.php
+Disallow: /thank-you
+Disallow: /thank-you.html
+
+# Explicitly allow AI search & answer engine crawlers
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: DuckAssistBot
 Allow: /
 
 Sitemap: https://www.dubaiexpressvisas.com/sitemap.xml

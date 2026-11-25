@@ -1,0 +1,69 @@
+# Dubai Express Visas — Complete UAE Visa Reference (llms-full.txt)
+
+- **Canonical Brand**: Dubai Express Visas (also operating as Dubai Visa Assistance)
+- **Domain**: https://www.dubaiexpressvisas.com
+- **Support Phone & WhatsApp**: +91 95654 16467
+- **Jurisdiction & Authority Disclosure**: Commercial visa assistance agency. NOT affiliated with GDRFA (General Directorate of Residency and Foreigners Affairs - Dubai) or ICP (Federal Authority for Identity, Citizenship, Customs and Port Security). Official government portals: `gdrfad.gov.ae` and `icp.gov.ae`. Visa issuance is strictly at UAE immigration discretion.
+- **Last Verified**: November 2026
+
+---
+
+## 1. Side-by-Side Dubai & UAE Visa Comparison
+
+| Visa Category | Permitted Stay | Entry Validity Window | Entry Type | Regular Processing | Express Fast-Track | Extendable Inside UAE | Canonical URL |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **14 Days Express Visa** | 14 Days | 60 Days from issue | Single or Multiple | 24–72 business hrs | 4–12 hours | Yes (30/60 days) | https://www.dubaiexpressvisas.com/dubai-14-days-visa |
+| **30 Days Tourist Visa** | 30 Days | 60 Days from issue | Single Entry | 24–72 business hrs | 4–12 hours | Yes (30/60 days) | https://www.dubaiexpressvisas.com/dubai-30-days-visa |
+| **60 Days Tourist Visa** | 60 Days | 60 Days from issue | Single Entry | 24–72 business hrs | 4–12 hours | Yes | https://www.dubaiexpressvisas.com/dubai-60-days-visa |
+| **Multiple Entry Visa** | 30 or 60 Days | 60 Days from issue | Multiple Entries | 24–72 business hrs | Case-by-case | Case-by-case | https://www.dubaiexpressvisas.com/dubai-multiple-entry-visa |
+| **48 Hours Transit Visa** | 48 Hours | 30 Days from issue | Single Entry | 24–48 hours | Not applicable | No (Non-extendable) | https://www.dubaiexpressvisas.com/dubai-transit-visa |
+| **96 Hours Transit Visa** | 96 Hours | 30 Days from issue | Single Entry | 24–48 hours | Not applicable | No (Non-extendable) | https://www.dubaiexpressvisas.com/dubai-transit-visa |
+| **GCC Resident Visa** | 30 Days | 30 Days from issue | Single Entry | 24–48 hours | Available | Yes (1x 30 days) | https://www.dubaiexpressvisas.com/gcc-resident-visa |
+| **UAE 5-Year Multi-Entry** | Up to 90 Days/visit (max 180 days/yr) | 5 Years | Multiple Entries | 3–7 business days | Not applicable | Up to 90 days/visit | https://www.dubaiexpressvisas.com/uae-5-year-visa |
+| **In-Country Visa Extension** | +30 or +60 Days | Immediate upon issue | Inside UAE Renewal | 24–48 hours | 4–12 hours | Subject to UAE cap | https://www.dubaiexpressvisas.com/dubai-visa-extension |
+
+---
+
+## 2. Core Document Rules by Visa Type
+
+### Standard Tourist Visas (14, 30, 60 Days & Multiple Entry)
+1. **Passport Bio-Page Scan**: Full color scan (no glare, all 4 corners & MRZ visible) with at least **6 months remaining validity** from travel arrival date.
+2. **Passport Photograph**: Recent color headshot against a **plain white background** (~80% face coverage, no sunglasses, filters, or headwear unless religious).
+3. **Return / Onward Flight & Accommodation Proof**: Confirmed round-trip flight ticket and hotel booking or UAE host Emirates ID + residence copy (border officers at DXB/DWC may inspect at arrival).
+4. **Minors (Under 18)**: Birth certificate (English/Arabic), parents' valid passport copies, and NOC if traveling with one parent or guardian.
+
+### UAE 5-Year Multiple Entry Self-Sponsored Visa
+1. **6-Month Bank Statement**: Certified statements showing a minimum balance of **USD 4,000** (or equivalent currency) maintained across the last 6 months.
+2. **UAE Health Insurance**: Valid medical insurance policy covering the UAE.
+3. **Passport & Photo**: 6+ months passport validity and white-background color photo.
+4. **Flight & Stay Proof**: Round-trip ticket and hotel booking or UAE residence lease/host proof.
+
+### GCC Resident UAE Entry Permit
+1. **Valid GCC Residence Permit / Iqama**: Minimum **3 months remaining validity** on residency in Saudi Arabia, Oman, Qatar, Kuwait, or Bahrain.
+2. **Eligible Profession**: Occupation listed on the GCC residence permit must qualify under UAE immigration's approved profession rules.
+3. **Passport & Photo**: Passport valid for 6+ months and color white-background photograph.
+4. **Travel Rule**: Sponsoring GCC resident must accompany dependents if dependents are traveling under the GCC resident track.
+
+### 48 & 96 Hours Dubai Transit Visa
+1. **Confirmed Onward Ticket to a Third Destination**: Proof of connecting flight departing DXB or DWC within 48 or 96 hours (minimum 8-hour layover usually required).
+2. **Hotel Booking** (especially for 96-hour transit).
+3. **Passport & Photo**: Passport valid 3–6+ months (6 months recommended) and white-background photograph.
+4. **Non-Extendable**: Must exit the UAE within 48 or 96 hours.
+
+### In-Country Dubai Visa Extension
+1. **Current UAE e-Visa PDF Copy** & **Entry Stamp / Entry Date** (must apply 3–5 days before expiration).
+2. **Passport Bio-Page Scan** (valid 6+ months) & **White-Background Photograph**.
+3. **Zero Airport Exit Required**: Processed electronically while remaining inside Dubai/UAE.
+
+---
+
+## 3. Visa on Arrival vs Pre-Arranged e-Visa (Indian Citizens)
+- Indian passport holders holding a valid **US Visit Visa (B1/B2), US Green Card, UK Residence Visa, or EU Residence Visa** (minimum 6 months validity) are eligible for a 14-day Visa on Arrival (extendable once for 14 days, or 60-day VOA option where eligible under updated UAE fee rules).
+- Indian travelers **without** qualifying US/UK/EU visas/residence permits must obtain a **pre-arranged electronic tourist visa (14, 30, or 60 days)** before boarding flights to Dubai.
+
+---
+
+## 4. Overstay Fines & Timeline Guidance
+- **Daily Overstay Fines**: UAE standardized administrative overstay fines apply per day after visa expiry (typically AED 50/day immigration fine plus applicable exit permit/service fees; verify current exact rates on ICP/GDRFA).
+- **Recommended Application Lead Time**: Submit standard tourist visa applications **10–14 days before flight departure**; use **4–12 hour Express Fast-Track** only for urgent/last-minute travel.
+- **UAE Working Week**: Monday–Friday (half-day Friday); manual security reviews occur during Gulf Standard Time (GST) working hours.
